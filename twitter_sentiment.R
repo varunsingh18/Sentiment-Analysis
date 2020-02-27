@@ -9,10 +9,10 @@ library(rtweet)
 devtools::install_github("mkearney/rtweet")
 library(syuzhet)
 # Save Key
-api_key <- 'AV4Lu87cRqL0lbGyCXH1Ys326'
-api_secret <- '79I7qWjsU9NamrL085k3D5FyEwR8asiRavWmUFkNA8jifmoLCV'
-access_token <- '124415925-s7ltnhYdeP0Rb8y09gvbMqDysZukyM1XIc0uWX7h'
-access_token_secret <- '4tGtkRgaOdhPvluOmqF83Kg3hPFl39yg7vMPIPUZAVUsK'
+api_key <- 'xxxxxxxxxxxxxxxxxxxx6'
+api_secret <- 'xxxxxxxxxxxxxx'
+access_token <- 'xxxxxxxxxxxxx'
+access_token_secret <- 'xxxxxxxx'
 setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)
 
 
@@ -25,15 +25,6 @@ write.csv(df, file='df.csv', row.names = F)
 
 
 
-
-
-#df3<-(df3$location %in% df1)
-
-
-
-#df<-df[!is.na(df$location),]
-#df <- df[-c(1,9)]
-#df <- df[-c(9:10)]
 View(df)
 write.csv(df, file='twitter.csv', row.names = F)
 df <- read.csv("twitter.csv", header=T, na.strings="")
